@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LawCater - Login</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0-beta2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="background"></div>
-    <header class="bg-dark text-white text-center py-3">
-        <h1 class="display-4">LawCater</h1>
+    <header class="bg-yellow text-white text-center py-3">
+        <div class="container">
+            <div class="header-box">
+                <h1 class="display-4" style="color: rgb(0, 0, 0)">LawCater</h1>
+            </div>
+        </div>
     </header>
     <div class="container mt-5">
         <div class="row justify-content-center">
@@ -20,25 +26,25 @@
                         <h2 class="card-title text-center">Welcome to Legal Portal</h2>
                         <form>
                             <div class="form-group">
-                                <label for="username">Username</label>
+                                <label for="username"><i class="fas fa-user"></i> Username</label>
                                 <input type="text" id="username" name="username" class="form-control" placeholder="Enter your username" required>
                             </div>
                             <div class="form-group">
-                                <label for="password">Password</label>
+                                <label for="password"><i class="fas fa-lock"></i> Password</label>
                                 <input type="password" id="password" name="password" class="form-control" placeholder="Enter your password" required>
                             </div>
                             <div class="form-group">
-                                <label for="user-type">User Type</label>
+                                <label for="user-type"><i class="fas fa-users"></i> User Type</label>
                                 <select id="user-type" name="user-type" class="form-control" required>
                                     <option value="client">Client</option>
                                     <option value="lawyer">Lawyer</option>
                                 </select>
                             </div>
-                            <button type="submit" class="btn btn-primary btn-block">Login</button>
+                            <button type="submit" class="btn btn-yellow btn-block"><i class="fas fa-sign-in-alt"></i> Login</button>
                         </form>
                         <div class="text-center mt-3">
-                            <p>Don't have an account? <a href="#">Sign up</a></p>
-                            <p><a href="#">Forgot password?</a></p>
+                            <p>Don't have an account? <a href="#"><i class="fas fa-user-plus"></i> Sign up</a></p>
+                            <p><a href="#"><i class="fas fa-key"></i> Forgot password?</a></p>
                         </div>
                     </div>
                 </div>
